@@ -1,0 +1,5 @@
+openai
+fastapi
+pymongo
+uvicorn[standard]
+python-multipart
