@@ -13,7 +13,6 @@ def get_questions(category):
     return conn.chintachhodo[category].find({})
 
 def fetch_categories(user_id):
-    print(user_id)
     problem = conn.chintachhodo.users.find_one({"clerkId": user_id}, {"_id": 0, "choosedProblems": 1})
     if problem is not None:
         choosed_problems = problem.get("choosedProblems", [])
